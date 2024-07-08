@@ -1,0 +1,62 @@
+
+1) Leap Year Checker
+
+function isLeap(year) {
+    if (year % 400 === 0) {
+        return true;
+    } else if (year % 100 === 0) {
+        return false;
+    } else if (year % 4 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isLeap(2016)); 
+console.log(isLeap(2000)); 
+console.log(isLeap(1700)); 
+console.log(isLeap(2025));
+---------------------------------------------------
+2) Ticket Pricing: 
+
+function ticketsprice(age) {
+    if (age <= 12) {
+        console.log("Age:"," The children's ticket costs is $10");
+    } else if (age >= 13 && age <= 17) {
+        console.log("Age:"," The teenager's ticket costs is $15");
+    } else if (age >= 18) {
+        console.log("Age:","The adult's ticket costs is $20");
+    } else {
+        console.log("Invalid age input.");
+    }
+}
+const ageInput = prompt('Enter your age:');
+ticketsprice(ageInput)
+-------------------------------------------------------------
+3) Fibonacci Sequence
+
+function fibonacci(n) {
+    if (n === 0)
+        return 0;  
+    else if (n === 1)
+        return 1; 
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);  
+}
+const n = 7
+const result = fibonacci(n);
+console.log(result);
+ output:13 
+----------------------------------------------------------------------
+4) Power Function
+function power(n, p) {
+    if (p === 0) {
+        return 1; 
+    } else if (p > 0) {
+        return n * power(n, p - 1); 
+    }
+}
+console.log(power(2, 3));
+console.log(power(5, 0)); 
+console.log(power(3,4)); 
